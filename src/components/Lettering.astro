@@ -1,0 +1,63 @@
+<section class="lettering">
+  <h2>
+    <span class="color-red animate transition-one">C</span>
+    <span class="color-brown animate transition-two">a</span>
+    <span class="color-blue animate transition-three">l</span>
+    <span class="color-green animate transition-four">i</span>
+    <span class="color-yellow animate transition-one">f</span>
+    <span class="color-red animate transition-two">o</span>
+    <span class="color-brown animate transition-three">r</span>
+    <span class="color-blue animate transition-four">n</span>
+    <span class="color-green animate transition-one">i</span>
+    <span class="color-yellow animate transition-two">a</span>
+  </h2>
+</section>
+
+<style>
+  .lettering {
+    padding: 4rem;
+  }
+
+  h2 {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.1em;
+    text-align: center;
+  }
+
+
+  @keyframes fade-up {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .transition-one {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
+  }
+
+  .transition-two {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
+  }
+
+  .transition-three {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
+  }
+
+  .transition-four {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
+  }
+
+
+</style>

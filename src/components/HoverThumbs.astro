@@ -1,0 +1,149 @@
+<section
+  class="section"
+  data-scene
+  data-scene-hook="onCenter"
+  data-scene-duration="50%"
+>
+  <div class="container">
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--red"
+        src="https://picsum.photos/id/1015/300/300"
+        alt="a canyon and a lake"
+      />
+    </div>
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--green"
+        src="https://picsum.photos/id/1016/300/300"
+        alt="a canyon"
+      />
+    </div>
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--blue"
+        src="https://picsum.photos/id/1011/300/300"
+        alt="a canoe"
+      />
+    </div>
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--red"
+        src="https://picsum.photos/id/1003/300/300"
+        alt="a canyon and a lake"
+      />
+    </div>
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--blue"
+        src="https://picsum.photos/id/1005/300/300"
+        alt="a canyon and a lake"
+      />
+    </div>
+    <div
+      class="item"
+      data-animate
+      data-animate-from-y="75"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+    >
+      <img
+        class="border--green"
+        src="https://picsum.photos/id/1006/300/300"
+        alt="a canyon and a lake"
+      />
+    </div>
+  </div>
+
+  <style>
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14rem 0;
+      text-align: center;
+      background-color: var(--provincial-pink);
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+    }
+
+    img {
+      --s: 250px; /* the size of the image */
+      --b: 8px; /* the border thickness*/
+      --g: 14px; /* the gap */
+      --c: var(--yellow); /* the color */
+
+      width: var(--s);
+      aspect-ratio: 1;
+      outline: calc(var(--s) / 2) solid rgba(45, 45, 45, 0.6);
+      outline-offset: calc(var(--s) / -2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      outline: var(--b) solid var(--c);
+      outline-offset: var(--g);
+    }
+
+    .border--red {
+      --c: var(--red);
+    }
+
+    .border--green {
+      --c: var(--green);
+    }
+
+    .border--blue {
+      --c: var(--blue);
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  </style>
+</section>

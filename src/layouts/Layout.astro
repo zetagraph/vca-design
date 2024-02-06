@@ -30,11 +30,10 @@ const { title } = Astro.props;
   <body>
     <slot />
   </body>
-  <script>
+  <script type="module">
     new ScrollXP({
       container: document.body,
     });
-    stop();
   </script>
 </html>
 

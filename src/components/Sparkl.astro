@@ -1,8 +1,22 @@
-<section class="section bg-blue"></section>
+<section data-scene class="section bg-blue">
+  <h2 data-animate data-animate-from-y="70" data-animate-to-y="0">
+    <sparkly-text
+      number-of-sparkles="5"
+      style="--sparkly-text-color: orange">
+        Hello California!
+    </sparkly-text>
+  </h2>
+</section>
 
 <style>
   .section {
-    height: 50vh;
+    padding: 12rem 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 6rem;
   }
 
   .bg-blue {

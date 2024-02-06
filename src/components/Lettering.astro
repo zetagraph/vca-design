@@ -1,21 +1,23 @@
-<section class="lettering">
-  <h2>
-    <span class="color-red animate transition-one">C</span>
-    <span class="color-brown animate transition-two">a</span>
-    <span class="color-blue animate transition-three">l</span>
-    <span class="color-green animate transition-four">i</span>
-    <span class="color-yellow animate transition-one">f</span>
-    <span class="color-red animate transition-two">o</span>
-    <span class="color-brown animate transition-three">r</span>
-    <span class="color-blue animate transition-four">n</span>
-    <span class="color-green animate transition-one">i</span>
-    <span class="color-yellow animate transition-two">a</span>
-  </h2>
+<section class="lettering" data-scene>
+  <div data-animate data-animate-from-y="70" data-animate-to-y="0" data-animate-from-alpha="0" data-animate-to-alpha="1" data-animate-from-scale="0.75" data-animate-to-scale="1">
+    <h2>
+      <span class="color-red animate transition-one">C</span>
+      <span class="color-brown animate transition-two">a</span>
+      <span class="color-blue animate transition-three">l</span>
+      <span class="color-green animate transition-four">i</span>
+      <span class="color-yellow animate transition-one">f</span>
+      <span class="color-red animate transition-two">o</span>
+      <span class="color-brown animate transition-three">r</span>
+      <span class="color-blue animate transition-four">n</span>
+      <span class="color-green animate transition-one">i</span>
+      <span class="color-yellow animate transition-two">a</span>
+    </h2>
+  </div>
 </section>
 
 <style>
   .lettering {
-    padding: 4rem;
+    padding: 6rem 0;
   }
 
   h2 {
@@ -27,7 +29,7 @@
   }
 
 
-  @keyframes fade-up {
+  /* @keyframes fade-up {
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -57,7 +59,21 @@
     opacity: 0;
     transform: translateY(100px);
     animation: fade-up 1s 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
-  }
+  } */
 
 
 </style>
+
+
+<!-- <script>
+  let view = new ScrollXP({
+    container: document.body,
+  });
+
+  let fadeInAnimation = new ScrollXP.Animation("fade-in")
+    .fromAlpha(0)
+    .toAlpha(1)
+    .build();
+
+  view.register(fadeInAnimation);
+</script> -->

@@ -1,6 +1,6 @@
 <section data-scene class="section">
   <div class="container">
-    <h2 class="conic-gradient-text"
+    <h2
       data-animate
       data-animate-from-y="70"
       data-animate-to-y="0"
@@ -9,7 +9,7 @@
       data-animate-from-scale="0.75"
       data-animate-to-scale="1"
     >
-      The Ultimate Playground
+      Caifornia the <span class="conic-gradient-text">Ultimate Playground</span>
     </h2>
   </div>
 </section>
@@ -22,10 +22,18 @@
     text-align: center;
   }
 
+  h2 {
+    font-size: clamp(3.75rem, 0rem + 10vw, 7.5rem);
+    line-height: 1;
+    color: var(--blue-dark);
+  }
+
   .conic-gradient-text {
+    display: block;
+    padding: 0  0 1rem;
     background: conic-gradient(
       var(--red) 0 10%,
-      var(--blue) 0 30%,
+      var(--brown) 0 30%,
       var(--green) 0 50%,
       var(--brown) 0 70%,
       var(--red) 0 100%
@@ -36,8 +44,5 @@
     background-clip: text;
     background-size: 55%;
     color: transparent;
-    font-size: clamp(3.75rem, 0rem + 10vw, 7.5rem);
-    line-height: 1;
-    padding: 1rem 2rem;
   }
 </style>

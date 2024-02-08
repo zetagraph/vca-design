@@ -1,0 +1,43 @@
+<section data-scene class="section">
+  <div class="container">
+    <h2 class="conic-gradient-text"
+      data-animate
+      data-animate-from-y="70"
+      data-animate-to-y="0"
+      data-animate-from-alpha="0"
+      data-animate-to-alpha="1"
+      data-animate-from-scale="0.75"
+      data-animate-to-scale="1"
+    >
+      The Ultimate Playground
+    </h2>
+  </div>
+</section>
+
+<style>
+  .section {
+    padding: 12rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .conic-gradient-text {
+    background: conic-gradient(
+      var(--red) 0 10%,
+      var(--blue) 0 30%,
+      var(--green) 0 50%,
+      var(--brown) 0 70%,
+      var(--red) 0 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    background-clip: text;
+    background-size: 55%;
+    color: transparent;
+    font-size: clamp(3.75rem, 0rem + 10vw, 7.5rem);
+    line-height: 1;
+    padding: 1rem 2rem;
+  }
+</style>
